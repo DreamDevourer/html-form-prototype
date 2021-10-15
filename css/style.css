@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#mainTitle, #subTitle {
+    font-family: sans-serif;
+    color: rgb(255, 255, 255);
+    margin: auto;
+} 
+
+#check{
+    display: inline-block;
+}
+
+fieldset {
+    border: 0;
+}
+
+body{
+    background-color: #283F52;
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #ffffff;
+    margin-left: 36%;
+    margin-top: 2%;
+    justify-content: center;
+}
+
+input, select, textarea, button {
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+.infoHero {
+    margin-bottom: 50px;
+}
+
+.groupContainer:before, .groupContainer:after {
+    display: table;
+}
+
+.groupContainer:after {
+    clear: both;
+}
+
+.fieldArea {
+    margin-bottom: 1em;
+}
+
+.fieldArea label {
+    margin-bottom: 0.2em;
+    color: #ffffff;
+    display: block;
+}
+
+fieldset.groupContainer .fieldArea {
+    float:  left;
+    margin-right: 1em;
+}
+
+.fieldArea input[type="text"], .fieldArea input[type="email"], .fieldArea select, .fieldArea textarea {
+    padding: 0.2em;
+    display: block;
+    background-color: #487093;
+    border-radius: 5rem;
+    border: none;
+    color: #ffffff;
+}
+
+.fieldArea select option {
+    padding-right: 1em;
+}
+
+.fieldArea input:focus, .fieldArea select:focus, .fieldArea textarea:focus {
+    background: #487093;
+}
+
+.defBtt {
+    font-size: 1.2em;
+    background: #fd8679;
+    border: 0;
+    border-radius: 5rem;
+    margin: 1rem 1rem 1rem 0;
+    color: #ffffff;
+    padding: 0.43rem 0.9rem;
+}
+
+.defBtt:hover {
+    background: #fca88f;
+}
+
+.defBtt, select{
+    cursor: pointer;
+}

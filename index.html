@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+
+<!-- SUMMARY
+🅰 Form Title and Sub
+📜 Main Form
+-- Name text field
+-- Last Name text field
+-- Email text field
+-- Radio buttons
+-- Drop-down options
+-- Checkboxes
+-- Text box rich text field
+-- Submit button
+
+made by Nicolas Mendes Oct 15, 2021.
+-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Loading CSS here -->
+  <link rel="stylesheet" type="text/css" href="./css/style.css" media="screen">
+  <title>Vanilla Form Study</title>
+</head>
+
+<body>
+
+  <section>
+    <!-- 🅰 Form Title and Sub -->
+    <div class="infoHero">
+      <h1 id="mainTitle">Vanilla Web Form Study</h1>
+      <p id="subTitle">This is just for educational purposes.</p>
+    </div>
+
+    <!-- 📜 Main Form -->
+    <form>
+
+      <fieldset class="groupContainer">
+        <!-- Name text field -->
+        <div class="fieldArea">
+          <label for="name"><strong>Name</strong></label>
+          <input type="text" name="name" id="name" required>
+        </div>
+
+        <!-- Last Name text field -->
+        <div class="fieldArea">
+          <label for="LastName"><strong>Last Name</strong></label>
+          <input type="text" name="LastName" id="LastName" required>
+        </div>
+      </fieldset>
+
+      <!-- Email email field -->
+      <div class="fieldArea">
+        <label for="email"><strong>Email</strong></label>
+        <input type="email" name="email" id="email" required>
+      </div>
+
+      <!-- Radio buttons -->
+      <div class="fieldArea">
+        <label><strong>Radio Buttons Sample</strong></label>
+        <label>
+          <input type="radio" name="devweb" value="opt1" checked>Option 1
+        </label>
+        <label>
+          <input type="radio" name="devweb" value="opt2">Option 2
+        </label>
+        <label>
+          <input type="radio" name="devweb" value="opt3">Option 3
+        </label>
+      </div>
+
+      <!-- Drop-down options -->
+      <div class="fieldArea">
+        <label for="degreeField"><strong>Dropdown Sample</strong></label>
+        <select id="degreeField" required>
+          <option selected disabled value="">Select</option>
+          <option>Option 1</option>
+          <option>Option 2</option>
+          <option>Option 3</option>
+        </select>
+      </div>
+
+      <fieldset class="groupContainer">
+        <!-- Checkboxes -->
+        <div id="check">
+          <label><strong>Checkboxes Sample</strong></label><br><br>
+          <input type="checkbox" id="test1" name="test1" value="test1">
+          <label for="test1">Option 1</label>
+          <input type="checkbox" id="test2" name="test2" value="test1">
+          <label for="test2">Option 2</label>
+          <input type="checkbox" id="test3" name="test3" value="test1">
+          <label for="test3">Option 3</label>
+          <input type="checkbox" id="test4" name="test4" value="test1">
+          <label for="test4">Option 4</label>
+          <input type="checkbox" id="test5" name="test5" value="test1">
+          <label for="test5">Option 5</label>
+        </div>
+      </fieldset>
+
+      <!-- Text box rich text field -->
+      <div class="fieldArea">
+        <br>
+        <label for="textBox"><strong>Text Box Sample</strong></label>
+        <textarea rows="6" style="width: 25em; border-radius: 1rem;" id="textBox" name="textBox"></textarea>
+      </div>
+
+      <!-- Submit button -->
+      <button class="defBtt" type="submit" onsubmit="">Submit</button>
+
+    </form>
+  </section>
+</body>
+
+</html>
