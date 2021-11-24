@@ -37,6 +37,7 @@ made by Nicolas Mendes Oct 15, 2021.
     <form>
 
       <fieldset class="groupContainer">
+        <legend>User data</legend>
         <!-- Name text field -->
         <div class="fieldArea">
           <label for="name"><strong>Name</strong></label>
@@ -51,13 +52,14 @@ made by Nicolas Mendes Oct 15, 2021.
       </fieldset>
 
       <!-- Email email field -->
-      <div class="fieldArea">
+      <fieldset class="fieldArea">
+        <legend>User email</legend>
         <label for="email"><strong>Email</strong></label>
         <input type="email" name="email" id="email" required>
-      </div>
+      </fieldset>
 
       <!-- Radio buttons -->
-      <div class="fieldArea">
+      <fieldset class="fieldArea">
         <label><strong>Radio Buttons Sample</strong></label>
         <label>
           <input type="radio" name="devweb" value="opt1" checked>Option 1
@@ -68,10 +70,10 @@ made by Nicolas Mendes Oct 15, 2021.
         <label>
           <input type="radio" name="devweb" value="opt3">Option 3
         </label>
-      </div>
+      </fieldset>
 
       <!-- Drop-down options -->
-      <div class="fieldArea">
+      <fieldset class="fieldArea">
         <label for="degreeField"><strong>Dropdown Sample</strong></label>
         <select id="degreeField" required>
           <option selected disabled value="">Select</option>
@@ -79,9 +81,10 @@ made by Nicolas Mendes Oct 15, 2021.
           <option>Option 2</option>
           <option>Option 3</option>
         </select>
-      </div>
+      </fieldset>
 
       <fieldset class="groupContainer">
+        <legend>Checkbox sample</legend>
         <!-- Checkboxes -->
         <div id="check">
           <label><strong>Checkboxes Sample</strong></label><br><br>
@@ -99,11 +102,12 @@ made by Nicolas Mendes Oct 15, 2021.
       </fieldset>
 
       <!-- Text box rich text field -->
-      <div class="fieldArea">
+      <fieldset class="fieldArea">
+        <legend>User extra description</legend>
         <br>
         <label for="textBox"><strong>Text Box Sample</strong></label>
         <textarea rows="6" style="width: 25em; border-radius: 1rem;" id="textBox" name="textBox"></textarea>
-      </div>
+      </fieldset>
 
       <!-- Submit button -->
       <button class="defBtt" type="submit" onsubmit="">Submit</button>
